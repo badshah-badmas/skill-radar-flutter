@@ -1,4 +1,11 @@
 import 'package:flutter/material.dart';
+
+import 'package:skill_radar_flutter/screens/admin_home.dart';
+import 'package:skill_radar_flutter/screens/customer_home.dart';
+
+import 'package:skill_radar_flutter/screens/provider_home.dart';
+
+
 import 'package:skill_radar_flutter/screens/signup.dart';
 import 'package:skill_radar_flutter/screens/splash_screen.dart';
 
@@ -12,7 +19,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: SplashScreen(),
+      home: ProviderHome()
+
     );
   }
 }
