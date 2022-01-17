@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:skill_radar_flutter/screens/signup.dart';
 import 'package:skill_radar_flutter/screens/splash_screen.dart';
 
 void main() {

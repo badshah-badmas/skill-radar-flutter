@@ -16,25 +16,128 @@ class UserTypeSeletor extends StatelessWidget {
               decoration: const BoxDecoration(
                 color: mainAssetColor,
                 borderRadius: BorderRadius.only(
-                  bottomLeft: Radius.circular(80),
+                  bottomLeft: Radius.circular(50),
                 ),
               ),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.end,
-                children: const [
-                  Text(
-                    "Select",
-                    style: TextStyle(color: Colors.white),
-                  ),
-                  Text(
-                    "Who you are?",
-                    style: TextStyle(color: Colors.white),
-                  ),
-                ],
+              child: Padding(
+                padding: const EdgeInsets.only(left: 20, bottom: 40),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  children: const [
+                    Text(
+                      "Select",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 30,
+                      ),
+                    ),
+                    Text(
+                      "Who you are?",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 50,
+                      ),
+                    ),
+                  ],
+                ),
               ),
             ),
           ),
-          Expanded(flex: 2, child: Container()),
+          Expanded(
+            flex: 3,
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 80),
+              child: Container(
+                child: Column(
+                  children: [
+                    Expanded(
+                      child: Row(
+                        children: [
+                          Expanded(
+                            child: Container(
+                              height: double.infinity,
+                              decoration: const BoxDecoration(
+                                color: mainAssetColor,
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(30)),
+                              ),
+                              child: Column(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: const [
+                                  Icon(
+                                    Icons.computer,
+                                    color: Colors.white,
+                                    size: 70,
+                                  ),
+                                  Text(
+                                    "Admin",
+                                    style: TextStyle(color: Colors.white),
+                                  )
+                                ],
+                              ),
+                            ),
+                          ),
+                          const SizedBox(
+                            width: 20,
+                          ),
+                          Expanded(
+                            child: Container(
+                              height: double.infinity,
+                              decoration: const BoxDecoration(
+                                  color: mainAssetColor,
+                                  borderRadius:
+                                      BorderRadius.all(Radius.circular(30))),
+                              child: Column(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: const [
+                                  Icon(
+                                    Icons.person,
+                                    color: Colors.white,
+                                    size: 70,
+                                  ),
+                                  Text(
+                                    "Customer",
+                                    style: TextStyle(color: Colors.white),
+                                  )
+                                ],
+                              ),
+                            ),
+                          )
+                        ],
+                      ),
+                    ),
+                    SizedBox(
+                      height: 20,
+                    ),
+                    Expanded(
+                      child: Container(
+                        width: double.infinity,
+                        decoration: const BoxDecoration(
+                            color: mainAssetColor,
+                            borderRadius:
+                                BorderRadius.all(Radius.circular(30))),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: const [
+                            Icon(
+                              Icons.room_service,
+                              color: Colors.white,
+                              size: 70,
+                            ),
+                            Text(
+                              "Customer",
+                              style: TextStyle(color: Colors.white),
+                            )
+                          ],
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ),
           Expanded(child: Container())
         ],
       )),
