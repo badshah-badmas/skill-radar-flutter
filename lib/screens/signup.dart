@@ -74,7 +74,7 @@ class _SignUpState extends State<SignUp> {
                                 decoration: BoxDecoration(
                                     color: Colors.white,
                                     borderRadius: BorderRadius.circular(40),
-                                    boxShadow: [
+                                    boxShadow: const [
                                       BoxShadow(
                                           color: mainAssetColor,
                                           blurRadius: 30,
@@ -83,13 +83,12 @@ class _SignUpState extends State<SignUp> {
                                 child: Column(
                                   children: <Widget>[
                                     Container(
-                                      padding: EdgeInsets.all(6),
-                                      decoration: BoxDecoration(),
-                                      child: TextField(
+                                      padding: const EdgeInsets.all(6),
+                                      decoration: const BoxDecoration(),
+                                      child: const TextField(
                                         decoration: InputDecoration(
                                             hintText: "Enter Full Name ",
                                             prefixIcon: Icon(Icons.person),
-                                            iconColor: mainAssetColor,
                                             hintStyle:
                                             TextStyle(color: Colors.grey),
                                             border: InputBorder.none),
@@ -115,13 +114,13 @@ class _SignUpState extends State<SignUp> {
                                 child: Column(
                                   children: <Widget>[
                                     Container(
-                                      padding: EdgeInsets.all(6),
-                                      decoration: BoxDecoration(),
-                                      child: TextField(
+                                      padding: const EdgeInsets.all(6),
+                                      decoration: const BoxDecoration(),
+                                      child: const TextField(
                                         decoration: InputDecoration(
                                             hintText: "Enter Email ",
                                             prefixIcon: Icon(Icons.email),
-                                            iconColor: mainAssetColor,
+                                            // iconColor: mainAssetColor,
                                             hintStyle:
                                             TextStyle(color: Colors.grey),
                                             border: InputBorder.none),
@@ -154,7 +153,7 @@ class _SignUpState extends State<SignUp> {
                                         decoration: InputDecoration(
                                             hintText: "Enter Password ",
                                             prefixIcon: Icon(Icons.password),
-                                            iconColor: mainAssetColor,
+                                            // iconColor: mainAssetColor,
                                             hintStyle:
                                             TextStyle(color: Colors.grey),
                                             border: InputBorder.none),
@@ -187,7 +186,7 @@ class _SignUpState extends State<SignUp> {
                                         decoration: InputDecoration(
                                             hintText: "Confirm Password ",
                                             prefixIcon: Icon(Icons.password),
-                                            iconColor: mainAssetColor,
+                                            // iconColor: mainAssetColor,
                                             hintStyle:
                                             TextStyle(color: Colors.grey),
                                             border: InputBorder.none),
@@ -218,7 +217,7 @@ class _SignUpState extends State<SignUp> {
                                   Navigator.push(
                                       context,
                                       MaterialPageRoute(
-                                          builder: (context1) => SignIn()));
+                                          builder: (context1) => const SignInScreen()));
                                 },
                                 child: Text(
                                   "SignUp",
@@ -238,9 +237,9 @@ class _SignUpState extends State<SignUp> {
                                         Navigator.push(
                                             context,
                                             MaterialPageRoute(
-                                                builder: (context1) => SignIn()));
+                                                builder: (context1) => const SignInScreen()));
                                       },
-                                      child: Text(
+                                      child: const Text(
                                         "Login",
                                         style: TextStyle(
                                           color: mainAssetColor,
@@ -263,35 +262,7 @@ class _SignUpState extends State<SignUp> {
               ),
             ],
           )
-
-class SignupScreen extends StatefulWidget {
-  const SignupScreen({Key? key}) : super(key: key);
-
-  @override
-  _SignupScreenState createState() => _SignupScreenState();
-}
-
-class _SignupScreenState extends State<SignupScreen> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: SafeArea(
-        child: Column(
-          children: [
-            Expanded(flex: 3, child: Container()),
-            Expanded(
-              flex: 5,
-              child: Container(
-                decoration: const BoxDecoration(
-                  color: mainAssetColor,
-                  borderRadius: BorderRadius.vertical(
-                    top: Radius.circular(35),
-                  ),
-                ),
-              ),
-            ),
-          ],
-        ),
+     
       ),
     );
   }

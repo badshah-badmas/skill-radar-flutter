@@ -3,14 +3,14 @@ import 'package:skill_radar_flutter/constentValue/asset_value.dart';
 import 'package:skill_radar_flutter/screens/admin_home.dart';
 import 'package:skill_radar_flutter/screens/signup.dart';
 
-class SignIn extends StatefulWidget {
-  const SignIn({Key? key}) : super(key: key);
+class SignInScreen extends StatefulWidget {
+  const SignInScreen({Key? key}) : super(key: key);
 
   @override
-  _SignInState createState() => _SignInState();
+  _SignInScreenState createState() => _SignInScreenState();
 }
 
-class _SignInState extends State<SignIn> {
+class _SignInScreenState extends State<SignInScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -80,13 +80,13 @@ class _SignInState extends State<SignIn> {
                                 child: Column(
                                   children: <Widget>[
                                     Container(
-                                      padding: EdgeInsets.all(6),
-                                      decoration: BoxDecoration(),
-                                      child: TextField(
+                                      padding: const EdgeInsets.all(6),
+                                      decoration: const BoxDecoration(),
+                                      child: const TextField(
                                         decoration: InputDecoration(
                                             hintText: "Enter Email ",
                                             prefixIcon: Icon(Icons.email),
-                                            iconColor: mainAssetColor,
+                                            
                                             hintStyle:
                                             TextStyle(color: Colors.grey),
                                             border: InputBorder.none),
@@ -113,13 +113,12 @@ class _SignInState extends State<SignIn> {
                                 child: Column(
                                   children: <Widget>[
                                     Container(
-                                      padding: EdgeInsets.all(6),
-                                      decoration: BoxDecoration(),
-                                      child: TextField(
+                                      padding: const EdgeInsets.all(6),
+                                      decoration: const BoxDecoration(),
+                                      child: const TextField(
                                         decoration: InputDecoration(
                                             hintText: "Enter Password ",
                                             prefixIcon: Icon(Icons.password),
-                                            iconColor: mainAssetColor,
                                             hintStyle:
                                             TextStyle(color: Colors.grey),
                                             border: InputBorder.none),
