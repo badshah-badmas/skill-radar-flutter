@@ -1,6 +1,5 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
-import 'package:skill_radar_flutter/constentValue/asset_value.dart';
 import 'package:skill_radar_flutter/screens/user_type_selection.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -33,24 +32,16 @@ class _SplashScreenState extends State<SplashScreen> {
               child: Container(
                 decoration: const BoxDecoration(
                   image: DecorationImage(
-                    image: AssetImage("lib/assets/images/Union 1.png"),
+                    image: AssetImage(
+                        "lib/assets/images/rand dot skill radar.png"),
                   ),
                 ),
               ),
             ),
             Center(
-              child: Container(
-                height: 120,
-                width: 120,
-                decoration: const BoxDecoration(
-                  color: mainAssetColor,
-                  shape: BoxShape.circle,
-                ),
-                child: const Center(
-                    child: Text(
-                  "Logo",
-                  style: TextStyle(color: Colors.white),
-                )),
+              child: Image.asset(
+                'lib/assets/images/skill radar logo.png',
+                height: 100,
               ),
             ),
             Expanded(child: Container())

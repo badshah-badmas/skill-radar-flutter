@@ -1,15 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:skill_radar_flutter/constentValue/asset_value.dart';
 import 'package:skill_radar_flutter/screens/signin.dart';
+import 'package:skill_radar_flutter/constentValue/asset_value.dart';
 
 class UserTypeSeletor extends StatelessWidget {
   const UserTypeSeletor({Key? key}) : super(key: key);
 
   @override
-  Widget build(BuildContext  context) {
+  Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-
           child: Column(
         children: [
           Expanded(
@@ -60,8 +59,9 @@ class UserTypeSeletor extends StatelessWidget {
                             height: double.infinity,
                             decoration: const BoxDecoration(
                               color: mainAssetColor,
-                              borderRadius:
-                                  BorderRadius.all(Radius.circular(30)),
+                              borderRadius: BorderRadius.all(
+                                Radius.circular(30),
+                              ),
                             ),
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.center,
@@ -86,9 +86,11 @@ class UserTypeSeletor extends StatelessWidget {
                           child: Container(
                             height: double.infinity,
                             decoration: const BoxDecoration(
-                                color: mainAssetColor,
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(30))),
+                              color: mainAssetColor,
+                              borderRadius: BorderRadius.all(
+                                Radius.circular(30),
+                              ),
+                            ),
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: const [
@@ -113,13 +115,18 @@ class UserTypeSeletor extends StatelessWidget {
                   ),
                   Expanded(
                     child: GestureDetector(
-                      onTap: () => Navigator.of(context).push(MaterialPageRoute(builder: (context){return const SignInScreen();})),
+                      onTap: () => Navigator.of(context)
+                          .push(MaterialPageRoute(builder: (context) {
+                        return const SignInScreen();
+                      })),
                       child: Container(
                         width: double.infinity,
                         decoration: const BoxDecoration(
-                            color: mainAssetColor,
-                            borderRadius:
-                                BorderRadius.all(Radius.circular(30))),
+                          color: mainAssetColor,
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(30),
+                          ),
+                        ),
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: const [
@@ -143,9 +150,7 @@ class UserTypeSeletor extends StatelessWidget {
           ),
           Expanded(child: Container())
         ],
-      )
-      ),
-
+      )),
     );
   }
 }

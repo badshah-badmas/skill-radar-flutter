@@ -10,17 +10,16 @@ class CustomerHome extends StatefulWidget {
 class _CustomerHomeState extends State<CustomerHome> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       backgroundColor: Colors.white,
       body: SafeArea(
           child: Center(
-            child: Text(
-              "Welcome to Customer Home",
-              style: TextStyle(fontSize: 30,color: Colors.black,
-                  fontWeight: FontWeight.bold),
-            ),
-          )
-      ),
+        child: Text(
+          "Welcome to Customer Home",
+          style: TextStyle(
+              fontSize: 30, color: Colors.black, fontWeight: FontWeight.bold),
+        ),
+      )),
     );
   }
 }
